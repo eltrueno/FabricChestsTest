@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "eufoniachests",
+  "version": "${version}",
+  "name": "EufoniaChests",
+  "description": "Eufonia prueba técnica",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/eufoniachests/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "es.eltrueno.eufoniachests.Eufoniachests"
+    ]
+  },
+  "mixins": [
+    "eufoniachests.mixins.json",
+    {
+      "config": "eufoniachests.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
