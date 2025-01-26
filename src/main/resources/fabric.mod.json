@@ -15,11 +15,7 @@
     ]
   },
   "mixins": [
-    "eufoniachests.mixins.json",
-    {
-      "config": "eufoniachests.client.mixins.json",
-      "environment": "client"
-    }
+    "eufoniachests.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
